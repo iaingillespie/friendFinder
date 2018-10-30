@@ -5,7 +5,7 @@ var friends = require("../data/friends");
 
 router.get('/friends', function(req, res){
 
-    res.send('friends')
+    res.send(friends)
 
 });
 

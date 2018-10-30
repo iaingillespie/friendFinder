@@ -1,12 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+
     <title>Friend Finder - Server</title>
 </head>
+
 <body>
-    <h1>This is our survey page</h1>
+
+    <div class="container">
+
+        <br>
+        <h1>Survey Questions</h1>
+        <hr>
+
+        <form>
+            <h3>About You</h3>
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Name (Required)</label>
+                <textarea class="form-control" id="user-name" rows="1"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Link to image (Required)</label>
+                <textarea class="form-control" id="user-name" rows="1"></textarea>
+            </div>
+
+            <hr><br>
+
+            <h3>Question 1</h3>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Do you enjoy the outdoors?</label>
+                <select class="form-control" id="q1">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 2</h3>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Do you enjoy the smell of coffee in the morning?</label>
+                <select class="form-control" id="q2">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 3</h3>
+            <div class="form-group">
+                <label for="q3">It is raining outside, you stay inside - it's best to stay warm</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 4</h3>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Do you enjoy pasta and red sauce?</label>
+                <select class="form-control" id="q4">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 5</h3>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Do you ever have mini exsostential crises and would like to talk
+                    about why we exist?</label>
+                <select class="form-control" id="q5">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 6</h3>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Do you like animals?</label>
+                <select class="form-control" id="q6">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 7</h3>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">You are family focused?</label>
+                <select class="form-control" id="q7">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 8</h3>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">You prefer to be alone for most things</label>
+                <select class="form-control" id="q8">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 9</h3>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">You regulalry make far too much food and try to save it but then
+                    after way too long have to throw it out?</label>
+                <select class="form-control" id="q9">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <h3>Question 10</h3>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Do you believe in Global Warming? (Like as if it is a mythical
+                    thing like the tooth fairy rather than a scientific fact)</label>
+                <select class="form-control" id="q10">
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 Strongly Agree)</option>
+                </select>
+            </div>
+
+            <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+
+        </form>
+
+        <br>
+
+        <footer class="footer">
+            <div class="container">
+                <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/iaingillespie/friendFinder">GitHub
+                        Repo</a></p>
+            </div>
+        </footer>
+
+    </div>
+
 </body>
+
 </html>
