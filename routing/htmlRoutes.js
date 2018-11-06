@@ -6,12 +6,13 @@ var path = require('path');
 
 
 router.get('/', function(req, res){
-    res.sendFile(path.join(__dirname + "/../public/home.html" ));
+    console.log("route hit!")
+    res.sendFile(path.join(__dirname, "../home.html" ));
 });
 
 router.get('/survey', function(req, res){
     
-    res.sendFile(path.join(__dirname + "/../public/survey.html"));
+    res.sendFile(path.join(__dirname, "../survey.html"));
     
 });
 

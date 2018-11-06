@@ -1,6 +1,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
-// var htmlRoutes = require('./routing/htmlRoutes');
+var htmlRoutes = require('./routing/htmlRoutes');
 
 var apiRoutes = require('./routing/apiRoute');
 
@@ -9,7 +9,7 @@ var path = require("path");
 
 
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -20,7 +20,7 @@ app.use(express.static("public"));
 
 
 
-// app.use('/', htmlRoutes);
+app.use('/', htmlRoutes);
 
 app.use('/api', apiRoutes);
 

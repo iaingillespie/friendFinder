@@ -19,7 +19,7 @@ router.post('/friends', function(req, res) {
         var currentFriendScores = currentFriend.scores;
         var totalDifference = 0;
         for( var j = 0; j < currentFriendScores.length; j++){
-                console.log(newFriend['scores[]']);
+               
                 var difference = currentFriendScores[j] - newFriend['scores[]'][j];
                 totalDifference += Math.abs(difference);
         }
