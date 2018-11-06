@@ -1,22 +1,26 @@
 var express = require("express");
-var htmlRoutes = require('./routing/htmlRoutes');
+var bodyParser = require("body-parser");
+// var htmlRoutes = require('./routing/htmlRoutes');
 
 var apiRoutes = require('./routing/apiRoute');
+
+var path = require("path");
 
 
 
 var app = express();
 var PORT = 3000;
 
-app.use(express.json());
-app.use(express.static('public'))
+
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
+app.use(express.static("public"));
 
 
 
 
 
-
-app.use('/', htmlRoutes);
+// app.use('/', htmlRoutes);
 
 app.use('/api', apiRoutes);
 

@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/iaingillespie/friendFinder#readme",
   "dependencies": {
-    "express": "^4.16.4"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "require": "^2.4.20"
   }
 }
